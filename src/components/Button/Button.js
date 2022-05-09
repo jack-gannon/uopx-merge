@@ -13,6 +13,7 @@ function Button(props) {
     <ButtonM
       {...other}
       ref={uxpinRef}
+      className={`${props.size}`}
       startIcon={props.startIcon && <Icon>{props.startIcon}</Icon>}
       endIcon={props.endIcon && <Icon>{props.endIcon}</Icon>}
     >
@@ -21,7 +22,7 @@ function Button(props) {
   )
 }
 
-Button.propTypes ={
+Button.propTypes = {
   /**
    * The label of the button.
    * @uxpinpropname Label
@@ -51,7 +52,7 @@ Button.propTypes ={
   /**
    * The size of the button.
    */
-  size: PropTypes.oneOf(["small", "medium", "large"]),
+  size: PropTypes.oneOf(["small", "large"]),
 
   /**
    * The type of button.

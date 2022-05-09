@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import boilerplateTheme from "./boilerplate-theme";
+import uopxTheme from '../../theme';
 
-const theme = createTheme(boilerplateTheme);
+const theme = createTheme(uopxTheme);
 
 export default function UXPinWrapper({ children }) {
 
